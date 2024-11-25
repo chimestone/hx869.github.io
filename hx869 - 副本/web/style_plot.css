@@ -1,0 +1,98 @@
+/* Reset some basic elements */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Set the font and background for the entire body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style the header */
+header {
+    background-color: #222;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Style the navigation menu */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+/* Style the main content */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #222;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plot-section {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.plot-section h2 {
+    color: #ff69b4; /* Light pink, a color associated with Undertale */
+    margin-bottom: 10px;
+}
+
+.plot-section p {
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+/* Style the footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+}

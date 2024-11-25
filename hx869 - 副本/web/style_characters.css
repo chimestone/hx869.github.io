@@ -1,0 +1,111 @@
+/* Reset some basic elements */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Set the font and background for the entire body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000; /* Set the background color to black */
+    color: #fff;
+    line-height: 1.6;
+    position: relative; /* Add relative positioning for footer */
+    min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
+    display: flex;
+    flex-direction: column; /* Stack the header, main, and footer vertically */
+}
+
+/* Style the header */
+header {
+    background-color: #222; /* Darker shade of black for contrast */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #fff;
+}
+
+/* Style the navigation menu */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+/* Style the main content */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #222; /* Darker shade of black for contrast */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    flex: 1; /* Allow the main content to grow and fill the space */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+}
+
+/* Style the character container */
+.character {
+    display: flex;
+    align-items: center; /* Ensure the image and text are aligned vertically */
+    justify-content: center; /* Center the character container horizontally */
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.character img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px; /* Space between image and text */
+}
+
+.character p {
+    margin: 0; /* Remove default margin */
+}
+
+/* Style the footer */
+footer {
+    background-color: #000; /* Set the footer background color to black */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto; /* Push the footer to the bottom */
+}
+
+/* Responsive images */
+main img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+}
